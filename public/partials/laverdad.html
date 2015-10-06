@@ -1,0 +1,141 @@
+﻿	<div class="jumbotron">
+		<div class="container">
+			<h1 class="text-center">MORE AMERICAN THAN APPLE PIE</h1>
+			<img src="img/r-APPLE-PIE-huge.jpg" alt="Apple Pie" class="img-responsive img-rounded img-center">
+		</div>
+	</div>
+	
+	<!-- row 3 Contenido -->
+	<div class="row">
+		<div id="sidebar2" class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+			<h2>NUESTROS BLOGUEROS</h2>	
+			
+			<div class="inner" ng-repeat="blog in blogs">
+				<img ng-src="img/{{ blog.imagen }}" alt="{{ blog.autor }}" class="img-thumbnail">
+				<h3><a href="#/laverdad/blogs">{{ blog.blogarticulo }}</a></h3>	
+				<h4><a href="#/laverdad/blogs">{{ blog.autor }}</a></h4>	
+				<h5>{{ blog.profesion }}</h5>	
+				<p>{{ blog.resumen }}</p>
+				<a class="comment" href="">{{ blog.comments }}</a>
+			</div>
+					
+		</div>
+		
+		<!-- Article es la columna mas importante y estara visible siempre -->
+		<!-- Cuando Aside llegue al breakpoint Small desaparecera, por lo tanto el 
+		espacio sera repartido entre la columna Nuestros Blogueros y Article de ahi que 
+		col-sm-8 -->
+		<article id="content" class="col-lg-5 col-md-5 col-sm-8">
+			<div class="inner">
+					
+				<h2><a href="#/laverdad/noticias/1">WHIP COUNT: Undecided Senators Siding With NRA</a></h2>
+				<img src="img/s-JOE-MANCHIN-NRA-large300.jpg" alt="JOE-MANCHIN-NRA" class="img-responsive img-rounded">		
+				<a class="comment" href="">Comments ( )</a>				
+			</div>
+			
+			<div class="inner">
+				
+				
+				<h2><a href="">Report: Explosives Made Of Pressure Cookers With Metal, Ball Bearings... CNN Source: Pressure Cooker Lid Found... Bomb Photos Obtained</a></h2>
+				<img src="img/s-BOSTON-POLICE-MOBILE-large300.jpg" alt="BOSTON-POLICE-MOBILE" class="img-responsive img-rounded">
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">Scalia: Voting Rights Act Is A Form Of 'Racial Preferment'</a></h2>
+				<img src="img/s-ANTONIN-SCALIA-large300.jpg" alt="ANTONIN-SCALIA" class="img-responsive img-rounded">
+				<h2><a href="">Right Wing vs. O.. State Going Blue?.. Bachmann On Top.. Tea Party Stun.. NRA Lie?.. Boehner Break</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="blogs_media.html">WATCH: Harry Reid Comes Out For Assault Weapons Ban</a></h3>
+				<img src="img/s-HARRY-REID-ASSAULT-WEAPONS-BAN-large300.jpg" alt="HARRY-REID" class="img-responsive img-rounded">
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">PATHETIC: Foreclosure Program's Latest Setback</a></h2>
+				<img src="img/s-FORECLOSURE-SETTLEMENT-large300.jpg" alt="FORECLOSURE-SETTLEMENT" class="img-responsive img-rounded">
+				<h2><a href="">IKEA Meatball Shock.. Congress Sneaks.. ATM Fees Higher.. McDonald's New Deal.. Lotto Surprise</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">PHOTO: Time's Heartbreaking Boston Cover</a></h2>
+				<img src="img/s-TIME-BOSTON-BOMBING-large300.jpg" alt="TIME-BOSTON" class="img-responsive img-rounded">
+				<h2><a href="">Maddow Pays Tribute.. Racial Profiling.. Awful Hannity.. Voice Of Boston.. Amy Goodman Speaks Out</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">Investigation Reveals Gun Control Loophole</a></h2>
+				<img src="img/s-INTERNET-GUN-SALES-large300.jpg" alt="INTERNET-GUN" class="img-responsive img-rounded">
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">House Immigration Group Says Talks Are Moving Forward</a></h2>
+				<img src="img/s-HOUSE-IMMIGRATION-GROUP-large300.jpg" alt="HOUSE-IMMIGRATION" class="img-responsive img-rounded">
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+		</article>
+		
+		<!-- Aside estara visible cuando alcance el breakpoint Medium o Large -->
+		<!-- Mide 3 columnas cuando esta en Medium y 3 columnas cuando esta en Large -->
+		<aside id="main2" class="col-lg-3 col-md-3 visible-lg visible-md">
+		
+			<div id="sidebar">
+			
+				<h2>MAS POPULARES</h2>	
+				<div>
+					<img src="img/s-NICKI-MINAJ-IDOL-OUTFIT-154x114.jpg" alt="NICKI-MINAJ" class="img-responsive img-rounded">
+					<h3><a href="">Nicki Minaj's Idol Outfit Was Talk Of Twitter During Episode (PHOTO, VIDEO)</a></h3>
+				</div>
+				
+				<div>
+					<img src="img/s-WATERTOWN-POLICE-CHACE-154x114.jpg" alt="WATERTOWN-POLICE" class="img-responsive img-rounded">
+					<h3><a href="">Watertown Police Chase: Gunfire, Explosions Reported On Scanner (LIVE UPDATES)</a></h3>
+				</div>
+		
+				<div>
+					<img src="img/s-SUSPECTS-mini.jpg" alt="SUSPECTS" class="img-responsive img-rounded">
+					<h3><a href="">Boston Marathon Bombing Suspect Photos Released; FBI Searching For 'Suspect 1' And 'Suspect 2'</a></h3>
+				</div>
+			
+				<div>
+					<img src="img/s-NEW-YORK-POST-154x114.jpg" alt="NEW-YORK-POST" class="img-responsive img-rounded">
+					<h3><a href="">New York Post's Boston 'Bag Men' Front Page Called 'A New Low,' 'Appalling' (PHOTO)</a></h3>
+				</div>
+				
+				<div>
+					<img src="img/s-CHEWBACCAHARRISONFORD-154x114.jpg" alt="CHEWBACCAHARRISONFORD" class="img-responsive img-rounded">
+					<h3><a href="">Chewbacca Crashes Harrison Ford's Kimmel Interview (VIDEO)</a></h3>
+				</div>
+				
+				<div>
+					<img src="img/s-ADOLPHUS-BUSCH-IV-NRA-154x114.jpg" alt="ADOLPHUS-BUSCH" class="img-responsive img-rounded">
+					<h3><a href="">Adolphus Busch IV Resigns From NRA After Gun Control Defeat In Senate</a></h3>
+				</div>
+				
+				<div>
+					<img src="img/s-BOSTON-SUSPECT-WANTED-154x114.jpg" alt="BOSTON-SUSPECT" class="img-responsive img-rounded">
+					<h3><a href="">Boston Marathon Bombing Suspect Killed, Another On The Loose (LIVE UPDATES)</a></h3>
+				</div>
+				
+				<div>
+					<img src="img/s-MIT-COLLEGE-SHOOTING-154x114.jpg" alt="MIT-COLLEGE-SHOOTING" class="img-responsive img-rounded">
+					<h3><a href="">MIT College Shooting: Police Officer Shot And Killed In Incident On Campus</a></h3>
+				</div>
+			
+			</div>
+			
+			<div class="social-media">
+				<a href=""><img src="logos/facebook.png"/></a>
+				<a href=""><img src="logos/twitter.png"/></a>
+				<a href=""><img src="logos/rss.png"/></a>				
+			</div>
+					
+		</aside>
+	</div>

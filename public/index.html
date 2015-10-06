@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html ng-app="LaVerdad">
+	<head>
+		<meta charset="utf-8">
+		<title>Journal</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- BOOTSTRAP / CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+		<link href="css/custom.css" rel="stylesheet">
+		
+		<!-- ANGULAR <script type="text/javascript" src="js/lib/angular-sanitize.min.js"></script>
+			<script type="text/javascript" src="js/controllers/sanitize.js"></script>
+		-->
+		<script type="text/javascript" src="js/lib/angular.min.js"></script>
+		<script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
+		<script type="text/javascript" src="js/lib/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="js/laverdad.js"></script>
+		<script type="text/javascript" src="js/controllers/controllers.js"></script>
+		<script type="text/javascript" src="js/journalservices.js"></script>
+
+		
+
+		<!--
+		<script type="text/javascript" src="js/services.js"></script>
+		-->
+	</head>
+	<body>
+		<div class="container" ng-controller="LaverdadCtrl">
+		
+			<div class="row">
+				<header class="text-center">
+						<p id="fecha"><script src="js/fecha.js"></script></p>
+						<h1>La Verdad</h1>
+						<form class="form-inline" role="form">
+							<div class="form-group">
+								<label class="sr-only" for="input"></label>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<input ng-model="buscar" type="text"  id ="input" class="form-control" placeholder="Buscar en la verdad">
+									</div>
+									<div class="input-group-addon">
+										<button ng-click="loadArticles();" class="btn btn-default glyphicon glyphicon-search"></button>
+									</div>
+								</div>
+							</div>
+						</form>
+				</header>
+			</div>
+
+			<!-- Navegacion -->
+			<div class="row">
+				<nav class="navbar navbar-default navbar-inverse" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>	
+					<div class="collapse navbar-collapse" id="collapse">				
+						<ul class="nav navbar-nav">
+							<li class="dropdown"><a href="#" data-toggle="dropdown">Edition: <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="http://www.huffingtonpost.com/?country=CA"> Canada <span class="derecha">CA</span></a></li>
+									<li><a href="http://www.huffingtonpost.com/?country=FR"> France <span class="derecha">FR</span></a></li>
+									<li><a href="http://www.huffingtonpost.com/?country=IT"> Italia <span class="derecha">IT</span></a></li>
+									<li><a href="http://www.huffingtonpost.com/?country=ES"> Espa&ntilde;a <span class="derecha">ES</span></a></li>
+									<li><a href="http://www.huffingtonpost.com/?country=US"> United States <span class="derecha">US</span></a></li>
+									<li><a href="http://www.huffingtonpost.com/?country=UK"> United Kingdom <span class="derecha">UK</span></a></li>
+								</ul>                    
+							</li>
+							<li class="active"><a href="#/laverdad">P&aacute;gina Principal</a></li>
+							<li class="dropdown"><a href="#" data-toggle="dropdown">Pol&iacute;tica <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="http://www.huffingtonpost.com/2013/05/10/benghazi-talking-points_n_3253638.html?ir=Politics">
+									Benghazi Talking Points Revisions Pushed By State Department</a></li>
+									<li><a href="http://www.huffingtonpost.com/2013/05/10/newtown-tear-down-sandy-hook_n_3256761.html?ir=Politics">
+									Newtown Panel: Tear Down Sandy Hook Elementary School, Rebuild</a></li>
+									<li><a href="http://www.huffingtonpost.com/2013/05/09/air-force-one-for-sale_n_3247551.html?ir=Politics">
+									Air Force One For Sale: Government Selling Former Presidential Plane</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Econom&iacute;a</a></li>
+							<li><a href="#">Ciencia&amp;Tecnolog&iacute;a</a></li>
+							<li><a href="#">Mundo</a></li>  
+						</ul>  
+					</div>
+				</nav>
+			</div>
+
+			<div ui-view></div>
+			
+			<!-- row 4 -->
+			<footer id="footer" class="row text-center">
+				<p>Copyright 2013 - Todos los derechos reservados</p>
+			</footer> <!-- footer -->
+				
+		</div> <!-- end container -->
+		
+		<!-- javascript 
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+		<script src="js/jquery-1.5.min.js"></script>
+		<script src="js/lib/bootstrap.min.js"></script>
+
+		
+		<!-- BOOTSTRAP / JavaScript -->
+		<script src="js/respond.js"></script>
+		<script src="js/indexBS.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
+	<span>COMENTARIOS</span>
+	<span class="right">Ordenar por: </span>
+	<span class="right" style="cursor: pointer" ng-click="ordenarPor('relevancia')">Relevancia | </span>
+	<span class="right" style="cursor: pointer" ng-click="ordenarPor('fecha')">Fecha </span>
+	
+	<div class="list-group">
+		<div class="list-group-item" ng-repeat="comentario in comentariosForo"> 
+			<img src="../img/Jamie Lee.jpg">
+			<span class="list-group-item-heading">{{ comentario.username }}</span>
+			<span class="list-group-item-heading">{{ comentario.fecha_hora }}</span>
+			<p class="list-group-item-text">{{ comentario.texto }}</p>		
+		</div>
+	</div>
+	
+</div>

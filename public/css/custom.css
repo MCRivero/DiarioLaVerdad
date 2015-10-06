@@ -1,0 +1,147 @@
+/*Some custom syling */
+body{
+	font-size: 14px;
+	/* Fondo azul cielo #eee */
+	background-color: #eee;
+}
+h1{
+	font-family: "Times New Roman", Times, serif;
+}
+nav{
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+}
+.jumbotron {
+	background-color: #ffffff;
+}
+.container {
+	background-color: #ffffff;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+.navbar-nav ul {
+	background-color: #222;
+	border-color: #080808;
+    margin: 0 2px;
+	color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #9d9d9d;
+}
+.dropdown-menu > li > a {
+    color: #ffffff;
+}
+.img-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-inline{
+	margin-bottom: 0.5em;
+}
+#footer, #fecha{
+	margin-top: 1em;
+}
+#sidebar2 {
+background-color: white;
+color: black;
+}
+#sidebar2 h2{
+font-weight: bold;
+font-size: 1.5em;
+font-family: "Times New Roman", Times, serif;
+border-bottom: 1px solid #000000;
+}
+#sidebar2  img{
+height: 50px;
+width: 50px;
+float: left;
+padding: 1px;
+margin-right: 0.5em;
+}
+#sidebar2 h3{
+overflow: hidden;
+font-size: 15px;
+font-family: "Times New Roman", Times, serif;
+}
+#sidebar2 h4{
+clear: left;
+padding-top: 7px;
+font-style:italic;
+font-family: "Times New Roman", Times, serif;
+}
+#sidebar2 h5 {
+font-style:italic;
+font-weight: bold;
+font-size: 13px;
+}
+#sidebar2 .inner{
+border-bottom: 1px solid #D1E0E0;
+margin-bottom: 10px;
+}
+#sidebar2 .comment{
+font:13px arial,sans-serif;
+font-weight:normal;
+}
+#content {
+background-color: white;
+color: black;
+border-right: 1px solid #D1E0E0;
+}
+#content a{
+color: black;
+font:18px arial,sans-serif;
+font-weight: bold;
+}
+#content .inner{
+border-bottom: 1px solid #D1E0E0;
+}
+#content .comment{
+font: 14px arial,sans-serif;
+font-weight: bold;
+color: #3399FF;
+}
+#main2 {
+border-top: 1px solid #D1E0E0;
+}
+#main2 a:hover{
+text-decoration: underline;
+}
+#sidebar {
+float: right;
+background-color: white;
+color: black;
+margin: 0;
+padding: 0 14px;
+font:14px arial,sans-serif;
+}
+#sidebar h2{
+font-weight: bold;
+border-bottom: 1px solid #000000;
+padding: 1em 0;
+font-size: 1.2em;
+margin-bottom: 5px;
+}
+#sidebar .inner {
+clear: both;
+}
+#sidebar .inner img{
+float: left;
+height: 114px;
+width: 154px;
+margin-bottom: 5px;
+}
+#sidebar h3{
+overflow: hidden;
+font:14px arial,sans-serif;
+}
+#sidebar a {
+color: black;
+}
+textarea.form-control {
+height: 12em;
+}
+/*.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-right: 210px;
+}*/

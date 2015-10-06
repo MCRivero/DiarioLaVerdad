@@ -1,0 +1,6 @@
+﻿	<div id="main-buscar" ng-repeat="contenido in contenidos">
+		<img ng-src="img/{{contenido.imagen_noticia}}"/>
+		<h4>{{contenido.titulo_noticia}}</h4>	
+		<p ng-bind-html="seguroHtml(contenido.texto_noticia)"></p>
+		<p>{{contenido.titulo_noticia}}</p>	
+	</div>  	

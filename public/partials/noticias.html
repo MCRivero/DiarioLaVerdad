@@ -1,0 +1,103 @@
+﻿	<div  ng-controller="NoticiasCtrl">
+		
+		<div class="row">
+						
+			<!-- Article es la columna mas importante y estara visible siempre -->
+			<!-- Cuando Aside llegue al breakpoint Small desaparecera, por lo tanto el 
+			espacio sera repartido entre la columna Nuestros Blogueros y Article de ahi que 
+			col-sm-8 -->
+			<article class="col-lg-9 col-md-9">
+			
+				<div class="inner" ng-repeat="contenido in contenidos">
+					<img src="img/headshot.jpg" alt="{{ contenido.foto_autor }}"/>
+					<h4>{{ contenido.autor_noticia }}</h4>	
+					<h5>{{ contenido.autor_email }}</h5>	
+					<h3>{{ contenido.titulo_noticia }}</h3>
+					<p ng-bind-html="seguroHtml(contenido.texto_noticia)"></p>
+
+				</div><!-- inner -->
+				
+			
+				<form name="comentario" ng-submit="salvarComentario()">	
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+							<div class="form-group">
+								<label for="texto">COMENTARIO</label>
+								<textarea class="form-control" id="texto" row="3" name="texto" ng-model="data.texto"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default">Enviar</button>
+						</div>
+						<div class="col-lg-1 col-md-1">
+							<label for="noticiaid"></label>
+							<input type="hidden" name="noticiaid" ng-model="data.noticiaid" >
+							<label for="usuario"></label>
+							<input class="form-control" type="hidden" id="usuario" name="usuario" ng-model="data.usuario" ng-require="true"/>					
+						</div>							
+					</div><!-- row -->
+				</form>
+				
+				<a ui-sref="laverdadarticulos.foro">Foro</a>
+				<div ui-view></div>
+				
+				
+			</article><!-- content -->
+			
+			<!-- Aside estara visible cuando alcance el breakpoint Medium o Large -->
+			<!-- Mide 3 columnas cuando esta en Medium y 3 columnas cuando esta en Large -->
+			<aside id="main2" class="col-lg-3 col-md-3 visible-lg visible-md">
+		
+				<div id="sidebar">
+				
+					<h2>MAS POPULARES</h2>	
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-NICKI-MINAJ-IDOL-OUTFIT-154x114.jpg" alt="NICKI-MINAJ"/>
+						<h3><a href="">Nicki Minaj's Idol Outfit Was Talk Of Twitter During Episode (PHOTO, VIDEO)</a></h3>
+					</div>
+			  
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-WATERTOWN-POLICE-CHACE-154x114.jpg" alt="WATERTOWN-POLICE"/>
+						<h3><a href="">Watertown Police Chase: Gunfire, Explosions Reported On Scanner (LIVE UPDATES)</a></h3>
+					</div>
+				
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-SUSPECTS-mini.jpg" alt="SUSPECTS"/>
+						<h3><a href="">Boston Marathon Bombing Suspect Photos Released; FBI Searching For 'Suspect 1' And 'Suspect 2'</a></h3>
+					</div>
+					
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-NEW-YORK-POST-154x114.jpg" alt="NEW-YORK-POST"/>
+						<h3><a href="">New York Post's Boston 'Bag Men' Front Page Called 'A New Low,' 'Appalling' (PHOTO)</a></h3>
+					</div>
+					
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-CHEWBACCAHARRISONFORD-154x114.jpg" alt="CHEWBACCAHARRISONFORD"/>
+						<h3><a href="">Chewbacca Crashes Harrison Ford's Kimmel Interview (VIDEO)</a></h3>
+					</div>
+					
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-ADOLPHUS-BUSCH-IV-NRA-154x114.jpg" alt="ADOLPHUS-BUSCH"/>
+						<h3><a href="">Adolphus Busch IV Resigns From NRA After Gun Control Defeat In Senate</a></h3>
+					</div>
+					
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-BOSTON-SUSPECT-WANTED-154x114.jpg" alt="BOSTON-SUSPECT"/>
+						<h3><a href="">Boston Marathon Bombing Suspect Killed, Another On The Loose (LIVE UPDATES)</a></h3>
+					</div>
+					
+					<div>
+						<img class="img-responsive img-rounded" src="img/s-MIT-COLLEGE-SHOOTING-154x114.jpg" alt="MIT-COLLEGE-SHOOTING"/>
+						<h3><a href="">MIT College Shooting: Police Officer Shot And Killed In Incident On Campus</a></h3>
+					</div>
+					
+				</div><!-- sidebar -->
+				
+				<div class="social-media">
+					<a href=""><img src="logos/facebook.png"/></a>
+					<a href=""><img src="logos/twitter.png"/></a>
+					<a href=""><img src="logos/rss.png"/></a>				
+				</div>
+				
+			</aside> <!-- aside -->
+		</div> <!-- row -->
+		
+	</div>
